@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coding assignment 1.4</title>
+</head>
+<body>
+    <h1 style="font-family: 'Times New Roman', Times, serif;">good morning</h1>
+    
+    
+  <script>
+        function add() {
+            var part = document.createElement('div');
+            part.style.top = '100px';
+            part.style.left = '100px';
+            part.style.width = '70px';
+            part.style.height = '70px';
+            part.style.background = "#ebd834";
+            part.style.borderRadius = '50%';
+            part.style.position = 'absolute';
+            document.body.appendChild(part);
+            return part;
+        }
+        let time=1000;
+        let pos=0;
+        let vel=300;
+        let ball=add()
+
+        function move(){
+            pos=pos+vel
+            if (pos > window.innerWidth - 50 || pos < 0) {
+                vel = -vel;
+            }
+            ball.style.left=pos+'px'
+            ball.style.top=pos+'px'
+        }
+        setInterval(move,time)
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
