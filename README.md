@@ -1,7 +1,7 @@
 # Ball Moving
 ## Description:
 
-This HTML page displays a continuous bouncing red ball animation within a rectangular area, controlled by lavascript using the setinterval function with a 500-millisecond interval.
+This HTML page displays a continuous bouncing red ball animation within a rectangular area, controlled by javascript using the setinterval function with a 500-millisecond interval.
 
 ## How to run the code:
 
